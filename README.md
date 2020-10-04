@@ -8,7 +8,7 @@ Latest update: 5th October 2020
 Author: David Alderman, Telesmart Limited, New Zealand
 
 ## Synopsis ##
-The purpose of this script is to create tenant dial plans for each geographical area code in New Zealand and Austrlia
+The purpose of this script is to create tenant dial plans for each geographical area code in New Zealand and Australia on Office 365 tenants that use Telesmart Cloud Calling for Microsoft Teams.
 The tenant dial plan will allow Microsoft Teams to:
 1. Recognize local phone numbers dialed by the user and convert them to e.164
 2. Recognize the emergency number and convert it to e.164
