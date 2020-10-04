@@ -47,6 +47,18 @@ There are 4 stages to this script.
 
 At the end, the script there will call ./patch-AuVoiceRoute.ps1 which will check of the voiceroutes for Australia this will confirm that they will recognise Australian service numbers, in some older deployments of Cloud Calling for Microsoft Teams there was an error in the voice route which could result in calls to service numbers failing. 
 
+# How to use this script #
+
+- Clone the repository to your local computer.
+- Open patch-TenantDialPlans.ps1 in PowerShell ISE. 
+- Use New-CsOnlineSession and import-PSSession to connect to SkypeOnline
+- run patch-TenantDialPlans.ps1 top to bottom
+
+The script will create the Tenant Dial Plans if they don't exist.
+The script will skip creating the Tenant Dial plans if they already exist.
+
+The script will locate user accounts that are configured with calling in Australian or New Zealand. It will output commands that can be run to apply a tenant dial plan to each user. If a user already has a tenant dial plan, then the command to update them to the suggested dial plan will be output.
+
 # Geographic Area Codes covered by these dial plans #
 
 ## New Zealand geographic area codes ##
